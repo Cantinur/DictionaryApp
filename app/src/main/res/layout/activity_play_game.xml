@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="top|center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="PlayGameActivity">
+
+    <TextView
+            android:id="@+id/the_word"
+            android:textSize="50sp"
+            android:padding="40sp"
+            android:textColor="#ffffff"
+            android:text="Hello World"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+
+    >
+        <TextView
+                android:id="@+id/points_view"
+                android:textSize="20sp"
+                android:text="Pts: 0"
+                android:layout_gravity="start"
+                android:layout_marginEnd="200sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+        />
+        <ImageButton
+                android:id="@+id/musicIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/play"
+                android:onClick="playOrPauseMusic"
+                android:background="@null"
+                android:contentDescription="Play/Pause"/>
+    </LinearLayout>
+
+
+
+    <ListView
+            android:id="@+id/list_of_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+</LinearLayout>
